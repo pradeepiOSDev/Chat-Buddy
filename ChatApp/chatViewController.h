@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  chatViewController.h
 //  ChatApp
 //
 //  Created by pradeep gunasekaran on 7/23/17.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface chatViewController : UIViewController
 
 
 @end

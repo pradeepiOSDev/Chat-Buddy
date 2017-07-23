@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  chatViewController.m
 //  ChatApp
 //
 //  Created by pradeep gunasekaran on 7/23/17.
 //  Copyright © 2017 pradeep gunasekaran. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "chatViewController.h"
 
-@interface ViewController ()
+@interface chatViewController ()
 
 @end
 
-@implementation ViewController
+@implementation chatViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
