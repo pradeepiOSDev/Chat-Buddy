@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface LoginViewController : UIViewController
+- (IBAction)loginButtonPressed:(id)sender;
+- (IBAction)newUserButtonPressed:(id)sender;
 
 @end

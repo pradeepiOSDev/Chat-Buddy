@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface chatViewController : UIViewController
+- (IBAction)logoutButtonPressed:(id)sender;
 
 
 @end
