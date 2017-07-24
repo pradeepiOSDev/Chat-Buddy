@@ -33,9 +33,6 @@
     
     if (name && email && password != nil) {
         
-      //
-    
- 
         [[FIRAuth auth] createUserWithEmail:email password:password completion:^(FIRUser * _Nullable user, NSError * _Nullable errorInRegistering) {
             
             
