@@ -20,4 +20,16 @@
 }
 
 
+- (IBAction)registerButtonPressed:(id)sender {
+    
+    
+    
+}
+
+
+
+- (IBAction)existingUserButtonPressed:(id)sender {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

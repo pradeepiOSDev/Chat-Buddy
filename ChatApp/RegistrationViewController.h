@@ -10,4 +10,14 @@
 
 @interface RegistrationViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+
+@property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+
+- (IBAction)registerButtonPressed:(id)sender;
+
+- (IBAction)existingUserButtonPressed:(id)sender;
+
 @end

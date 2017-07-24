@@ -338,7 +338,7 @@
 				DEVELOPMENT_TEAM = EF77LAX8R3;
 				INFOPLIST_FILE = ChatApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.ChatApp;
+				PRODUCT_BUNDLE_IDENTIFIER = pradeep.ChatApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -350,7 +350,7 @@
 				DEVELOPMENT_TEAM = EF77LAX8R3;
 				INFOPLIST_FILE = ChatApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.ChatApp;
+				PRODUCT_BUNDLE_IDENTIFIER = pradeep.ChatApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
