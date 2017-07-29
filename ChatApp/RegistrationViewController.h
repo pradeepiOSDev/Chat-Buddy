@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RegistrationViewController : UIViewController
+@interface RegistrationViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 

@@ -11,6 +11,5 @@
 @interface chatViewController : UIViewController
 - (IBAction)logoutButtonPressed:(id)sender;
 
-
 @end
 

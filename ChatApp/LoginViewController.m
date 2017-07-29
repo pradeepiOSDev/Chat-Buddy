@@ -60,7 +60,5 @@
     UIViewController *vc = [storyBoard instantiateViewControllerWithIdentifier:@"RegistrationViewController"];
     [self presentViewController:vc animated:YES completion:nil];
     
-    
-    
 }
 @end

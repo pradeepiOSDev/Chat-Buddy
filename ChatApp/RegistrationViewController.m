@@ -19,7 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    UITapGestureRecognizer *imageTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(handleTap:)];
     
+    [self.imageView setUserInteractionEnabled:YES];
+    [self.imageView addGestureRecognizer:imageTap];
 
 }
 
@@ -63,9 +66,38 @@
 }
 
 
+-(void)handleTap:(UITapGestureRecognizer *)recognizer{
+    
+    NSLog(@"1234");
+    
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    [self presentViewController:picker animated:YES completion:NULL];
+    
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
+    self.imageView.image = chosenImage;
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+    
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+    
+}
 
 - (IBAction)existingUserButtonPressed:(id)sender {
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+
 @end
